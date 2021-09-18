@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "types": [
+      "cypress",
+      "cypress-file-upload",
+      "node"
+    ]
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}

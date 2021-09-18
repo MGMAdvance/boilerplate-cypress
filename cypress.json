@@ -1,0 +1,14 @@
+{
+    "$schema": "https://on.cypress.io/cypress.schema.json",
+    "fixturesFolder": "cypress/tests/fixtures",
+    "pluginsFile": "cypress/config/plugins",
+    "supportFile": "cypress/config/support",
+    "integrationFolder": "cypress/tests",
+    "downloadsFolder": "cypress/tests/fixtures/downloads",
+    "videosFolder": "cypress/reports/videos",
+    "screenshotsFolder": "cypress/reports/screenshots",
+    "testFiles": "**/*.feature",
+    "viewportWidth": 1360,
+    "viewportHeight": 800,
+    "defaultCommandTimeout": 8500
+}

@@ -1,0 +1,40 @@
+{
+  "name": "workshop_cypress",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cypress",
+    "cucumber",
+    "typescript",
+    "automação"
+  ],
+  "contribuitors": [
+    "Abelhas",
+    "Jonny Dragon",
+    "Rockzera"
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cypress-cucumber-preprocessor": "^4.0.1",
+    "@types/node": "^16.9.2",
+    "@types/resolve": "^1.20.1",
+    "cypress": "8.1.0",
+    "cypress-cucumber-preprocessor": "^4.2.0",
+    "cypress-file-upload": "^5.0.8",
+    "tsify": "^5.0.4",
+    "typescript": "^4.4.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/tests/specs",
+    "cucumberJson": {
+      "outputFolder": "cypress/reports/cucumber-json",
+      "generate": true,
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}
