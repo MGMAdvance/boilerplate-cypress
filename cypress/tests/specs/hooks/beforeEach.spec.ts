@@ -1,9 +1,8 @@
 import { Before } from 'cypress-cucumber-preprocessor/steps'
 
-let smoke = 0
+// const smoke = 0
 
 Before({ tags: '@previdencia' }, () => {
-    if (smoke++ > 0) {
-
-    }
+  // if (smoke++ > 0) {
+  // }
 })

@@ -1,4 +1,3 @@
-
-Cypress.Commands.overwrite('visit', (originalFn: Function, url: string, options: {}) => {
-    return originalFn(url, { failOnStatusCode: false, ...options })
+Cypress.Commands.overwrite('visit', (originalFn, url: string, options) => {
+  return originalFn(url, { failOnStatusCode: false, ...options })
 })
