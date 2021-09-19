@@ -9,7 +9,7 @@
   },
   "lint-staged": {
     "*.{ts, json}": [
-      "lint",
+      "eslint --fix",
       "git add"
     ]
   },
