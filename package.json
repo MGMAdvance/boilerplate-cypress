@@ -15,8 +15,7 @@
   },
   "scripts": {
     "lint": "eslint cypress/**/*.ts",
-    "format": "eslint cypress/**/*.ts --fix",
-    "prepare": "husky install"
+    "format": "eslint cypress/**/*.ts --fix"
   },
   "keywords": [
     "cypress",
