@@ -4,7 +4,7 @@
   "description": "",
   "husky": {
     "hooks": {
-      "pre-commit": "echo 'texto'"
+      "pre-commit": "echo 'text'"
     }
   },
   "lint-staged": {
