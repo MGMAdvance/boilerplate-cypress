@@ -2,11 +2,6 @@
   "name": "workshop_cypress",
   "version": "1.0.0",
   "description": "",
-  "husky": {
-    "hooks": {
-      "pre-commit": "echo 'text'"
-    }
-  },
   "lint-staged": {
     "*.{ts, json}": [
       "eslint --fix",
@@ -15,7 +10,8 @@
   },
   "scripts": {
     "lint": "eslint cypress/**/*.ts",
-    "format": "eslint cypress/**/*.ts --fix"
+    "format": "eslint cypress/**/*.ts --fix",
+    "prepare": "husky install"
   },
   "keywords": [
     "cypress",
