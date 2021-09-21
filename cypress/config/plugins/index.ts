@@ -1,11 +1,8 @@
-import * as dotenv from 'dotenv'
-
-import cucumber from 'cypress-cucumber-preprocessor'
-import * as browserify from '@cypress/browserify-preprocessor'
-import * as resolve from 'resolve'
-dotenv.config({ path: '.env' })
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+/* eslint-disable @typescript-eslint/no-var-requires */
+require('dotenv').config()
+const cucumber = require('cypress-cucumber-preprocessor').default
+const resolve = require('resolve')
+const browserify = require('@cypress/browserify-preprocessor')
 const dotenvPlugin = require('cypress-dotenv')
 
 // const report = require("multiple-cucumber-html-reporter")
@@ -14,7 +11,10 @@ const dotenvPlugin = require('cypress-dotenv')
  * @type {Cypress.PluginConfig}
  */
 
-module.exports = (on, config) => {
+export default (
+  on: Cypress.PluginEvents,
+  config: Cypress.PluginConfigOptions
+): Cypress.PluginConfigOptions => {
   config = dotenvPlugin(config)
 
   const options = {
