@@ -3,13 +3,11 @@
 declare namespace Cypress {
   interface Chainable<Subject> {
     /**
-     * Descrição: clica, digita e seleciona um valor em um input com dropdown
-     * @param {string} input1 o input que recebe o primeiro click para abrir o dropdown.
-     * @param {string} input2 o input no qual o texto será digitado.
-     * @param {string} text o texto que será digitado.
+     * Description: Declare your commands here
+     * @param {string | Cypress.Chainable} element CSS selector or Cypress Element
      * @example
-     * cy.inputDropdown(foro, localizacao, 'Campinas')
+     * cy.example('div.example')
      */
-    inputDropdown(input1: string, input2: string, text?: string): Chainable<any>
+    example(element: string | Cypress.Chainable): Cypress.Chainable
   }
 }

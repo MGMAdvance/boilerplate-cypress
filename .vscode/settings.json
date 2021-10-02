@@ -1,0 +1,20 @@
+{
+  "[feature]": {
+    "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
+  },
+  "cucumberautocomplete.steps": [
+      "cypress/tests/specs/*.ts"
+  ],
+  "cucumberautocomplete.syncfeatures": "cypress/test/features/*.feature",
+  "cucumberautocomplete.strictGherkinCompletion": false,
+  "cucumberautocomplete.strictGherkinValidation": false,
+  "cucumberautocomplete.smartSnippets": true,
+  "cucumberautocomplete.stepsInvariants": false,
+  "cucumberautocomplete.onTypeFormat": true,
+  "editor.quickSuggestions": {
+      "comments": false,
+      "strings": true,
+      "other": true
+  },
+  "cucumberautocomplete.gherkinDefinitionPart": "(Given|And|When|Then)\\("
+}

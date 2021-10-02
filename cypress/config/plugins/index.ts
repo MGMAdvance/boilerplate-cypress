@@ -28,8 +28,9 @@ export default (
   ])
 
   on('file:preprocessor', cucumber(options))
-  on('after:run', () => {
-    report.generate(reportConfig)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  on('after:run', (results: any) => {
+    report.generate(reportConfig(results))
   })
 
   return config

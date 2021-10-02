@@ -1,5 +1,5 @@
 import { Given } from 'cypress-cucumber-preprocessor/steps'
 
-Given('teste', () => {
+Given('step 1', () => {
   cy.visit('/')
 })
