@@ -26,6 +26,9 @@ Instale todas as dependências do projeto.
 $ npm install
 ```
 
+## ⚙ Como utilizar o Boilerplate
+Em desenvolvimento
+
 ## 🕶 Contribuidores
 | <img src="https://avatars1.githubusercontent.com/u/33119304?s=160&v=4" alt="Andrey" width="160" /> | ![Jonathan](https://avatars3.githubusercontent.com/u/57598746?s=160&v=4) | ![Matheus](https://avatars0.githubusercontent.com/u/20846871?s=160&v=4) | 
 |:-----------------------------------------------------------------------:|:-----------------------------------------------------------------------:|:-----------------------------------------------------------------------:|
