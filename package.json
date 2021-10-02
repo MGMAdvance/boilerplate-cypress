@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Base template for cypress",
   "lint-staged": {
-    "cypress/**/*": [
+    "cypress/**/*.ts": [
       "npm run format"
     ]
   },
