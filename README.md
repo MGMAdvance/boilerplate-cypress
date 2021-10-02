@@ -17,7 +17,6 @@ Focando totalmente na produtividade com a devida estrutura já montada com uma p
 - **Prettier:** Formatação dos Scripts.
 - **Husky:** Validação dos commits.
 - **Cucumber:** Utilização do Gherkin para desenvolvimento dos testes.
-- **Gherkin Lint:** Formatação e Padronização das Features.
 - **EditorConfig:** Formatação e Padronização dos arquivos em geral.
 
 ## 📖 Preparando o ambiente
