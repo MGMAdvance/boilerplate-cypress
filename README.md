@@ -29,8 +29,8 @@ $ npm install
 ## ⚙ Como utilizar o Boilerplate
 Em desenvolvimento
 
-
 ## Extensões recomendadas para VSCode
+Caso utilize o VSCode, recomendamos as seguintes extensões para seu aumento de produtividade:
 - [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 - [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 - [Cucumber (Gherkin) Full Support](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete)
