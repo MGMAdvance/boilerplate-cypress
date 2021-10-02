@@ -27,7 +27,31 @@ $ npm install
 ```
 
 ## ⚙ Como utilizar o Boilerplate
-Em desenvolvimento
+### Adicionando uma nova Feature
+Todas as Features são localizadas em `cypress/tests/features`.
+### Adicionando uma nova Page
+Todas as Pages estão localizadas em `cypress/tests/pages`.
+
+Utilizando o conceito PageObjects, cada página contém sua pasta e os comportamentos da mesma, tendo a seguinte estrutura:
+```sh
+PAGES
+├───login
+│   │   index.ts
+│   │
+│   └───structures
+│           elements.json
+│           example.ts
+│
+└───profile
+    │   index.ts
+    │
+    └───structures
+            elements.json
+            example.ts
+```
+
+### Adicionando novas Specs
+Todas as Pages estão localizadas em `cypress/tests/specs`.
 
 ## Extensões recomendadas para VSCode
 Caso utilize o VSCode, recomendamos as seguintes extensões para seu aumento de produtividade:
