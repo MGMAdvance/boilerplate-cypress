@@ -29,6 +29,17 @@ $ npm install
 ## ⚙ Como utilizar o Boilerplate
 Em desenvolvimento
 
+
+## Extensões recomendadas para VSCode
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+- [Cucumber (Gherkin) Full Support](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete)
+- [Cypress Helper](https://marketplace.visualstudio.com/items?itemName=Shelex.vscode-cy-helper)
+- [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Feature Syntax Highlight and Snippets (Cucumber/Gherkin)](https://marketplace.visualstudio.com/items?itemName=Blodwynn.featurehighlight)
+
+
 ## 🕶 Contribuidores
 | <img src="https://avatars1.githubusercontent.com/u/33119304?s=160&v=4" alt="Andrey" width="160" /> | ![Jonathan](https://avatars3.githubusercontent.com/u/57598746?s=160&v=4) | ![Matheus](https://avatars0.githubusercontent.com/u/20846871?s=160&v=4) | 
 |:-----------------------------------------------------------------------:|:-----------------------------------------------------------------------:|:-----------------------------------------------------------------------:|
