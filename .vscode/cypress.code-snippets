@@ -1,0 +1,32 @@
+{
+	"Given": {
+		"scope": "typescript",
+		"prefix": "Given",
+		"body": [
+			"Given('$1', ($2:$3) => {",
+      "\t$4",
+      "})"
+		],
+		"description": "Create given step"
+	},
+  "When": {
+		"scope": "typescript",
+		"prefix": "When",
+		"body": [
+			"When('$1', ($2:$3) => {",
+      "\t$4",
+      "})"
+		],
+		"description": "Create when step"
+	},
+	"GetElement": {
+		"scope": "typescript",
+		"prefix": "GetElement",
+		"body": [
+		  "$1(): Cypress.Chainable {",
+      "\treturn cy.get('$2')",
+      "},"
+		],
+		"description": "Function to get an element"
+	}
+}
