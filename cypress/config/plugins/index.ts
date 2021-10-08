@@ -1,5 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import reportConfig from './reportConfig'
+import * as fs from 'fs'
+import * as path from 'path'
 require('dotenv').config()
 const cucumber = require('cypress-cucumber-preprocessor').default
 const resolve = require('resolve')
@@ -26,6 +28,10 @@ export default (
     'tsify',
     { project: config.projectRoot },
   ])
+
+  on('before:run', () => {
+    fs.rmdirSync(path.join(__dirname + '../../../reports'), { recursive: true })
+  })
 
   on('file:preprocessor', cucumber(options))
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
