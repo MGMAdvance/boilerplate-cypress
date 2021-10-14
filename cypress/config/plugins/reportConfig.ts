@@ -1,17 +1,10 @@
-type IConfig = {
-  browserName: string
-  browserVersion: string
-  osName: string
-  osVersion: string
-  config: {
-    retries: {
-      runMode: number
-      openMode: number
-    }
-  }
-}
+import * as dotenv from 'dotenv'
+import { IReportConfig } from './../../types/IReportConfig'
+import { IConfig } from '../../types/IConfig'
 
-const reportConfig = {
+dotenv.config()
+
+const reportConfig: IReportConfig = {
   jsonDir: 'cypress/reports/cucumber-json/',
   reportPath: 'cypress/reports/html-report',
   staticFilePath: true,
@@ -21,14 +14,14 @@ const reportConfig = {
   pageTitle: 'Workshop',
   reportName: 'report_workshop',
   displayDuration: true,
-  durationInMS: true,
+  durationInMS: false,
   displayReportTime: true,
   useCDN: true,
   customMetadata: false,
   metadata: {
     browser: {
-      name: 'chrome',
-      version: '60',
+      name: '',
+      version: '',
     },
     platform: {
       name: '',
@@ -45,12 +38,11 @@ const reportConfig = {
       },
       {
         label: 'Squad:',
-        value: 'Cypress',
+        value: `${process.env.SQUAD}`,
       },
       {
         label: 'QA(s):',
-        value:
-          '<a href="mailto:exemplo@exemplo.com">Andrey Oliveira</a><br /> <a href="mailto:exemplo@exemplo.com">Jonathan Daflon</a><br /> <a href="mailto:exemplo@exemplo.com">Matheus Gonçalves</a>',
+        value: `<a href="mailto:${process.env.QA_EMAIL}">${process.env.QA_NAME}</a><br />`,
       },
       {
         label: 'Data:',
@@ -61,10 +53,11 @@ const reportConfig = {
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function getConfigs(params: IConfig): any {
+export default function getConfigs(params: IConfig): IReportConfig {
   reportConfig.metadata.browser.name = params.browserName
   reportConfig.metadata.browser.version = params.browserVersion
-  reportConfig.metadata.platform.name = 'windows'
+  reportConfig.metadata.platform.name =
+    params.osName === 'win32' ? 'windows' : params.osName
   reportConfig.metadata.platform.version = params.osVersion
   reportConfig.metadata.retries = params.config.retries.runMode
 
